@@ -7,20 +7,21 @@
     <title>javascript program</title>
 </head>
 <body>
-    <h1>totol rent</h1>
+    <h1>Total hotel Rent </h1>
+    <p>কেউ যদি ১-১০ দিন থাকে তবে ১০০ টাকা হোটেল ভাড়া। কেউ যদি ১১-২০ দিন থাকে তবে ৮০ টাকা হোটেল ভাড়া।কেউ যদি ২১-যত দিন থাকে তবে ৫০ টাকা হোটেল ভাড়া।</p>
     <script>
 function rent(x){
      var total
      if(x<=10){
-         document.write(x*100)
+         document.write('TOTAL: ' + x*100 + 'TK'  )
      }else if(x<=20){
-         document.write(x*80)
+         document.write('TOTAL: ' + x*80  + 'TK' )
      }else if(x>=21){
-         document.write(x*50)
+         document.write('TOTAL: ' + x*50 + 'TK')
      }
 return total;
 }
-var total1=rent(30);
+var total1=rent(50);
 document.write(total1)
 
 
